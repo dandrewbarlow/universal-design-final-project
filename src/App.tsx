@@ -30,15 +30,8 @@ class Navbar extends React.Component{
       <nav>
         <ul>
           {this.renderLink('Why Universal Design?')}
-          <li><button >
-            Tenets
-          </button></li>
-          <li><button >
-            Practices
-          </button></li>
-
-          {/* <li><button ></button></li>
-          <li><button ></button></li> */}
+          {this.renderLink('Tenets')}
+          {this.renderLink('Practices')}
         </ul>
       </nav>
     );

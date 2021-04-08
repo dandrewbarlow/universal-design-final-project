@@ -8,6 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 
+// VARS/////////////////////////////////////////////////////////
 // Text
 $display-font: 'EB Garamond', serif;
 $display-font-size: 20pt;
@@ -23,6 +24,7 @@ $link-color: #4890FA;
 $link-shadow: 'black';
 
 
+// STYLE/////////////////////////////////////////////////////////
 body{
   background-color: $background-color;
   -webkit-font-smoothing: antialiased;
@@ -42,7 +44,7 @@ nav {
   ul {
     text-align: center;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
 
     li {
@@ -51,16 +53,16 @@ nav {
         font-size: $copy-font-size;
         color: $link-color;
         background-color: $shadow;
-        border-radius: 10%;
         border: none;
-        margin: 1em;
-        padding: 1em;
+        padding: 2em;
+        height: 100%;
         width: 10em;
       }
-      a:visited {
-        color: $link-shadow;
+      button:hover {
+        background-color: white;
       }
     }
+    
   }
 }
 
@@ -77,5 +79,6 @@ section {
   margin: 1em;
 }
 
+// IMPORTS////////////////////////////////////////////////
 // Code for responsive style in seperate document
 @import 'responsive';

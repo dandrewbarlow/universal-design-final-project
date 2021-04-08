@@ -6,6 +6,7 @@
 $responsive-display-font-size: 16pt;
 $responsive-copy-font-size: 12pt;
 
+// MEDIA QUERY///////////////////////////////////////////////////////
 @media only screen and (max-width: 600px) {
     header {
         font-size: $responsive-display-font-size;
@@ -13,6 +14,10 @@ $responsive-copy-font-size: 12pt;
     nav{
         ul {
             flex-direction: column;
+            li{
+                button {
+                }
+            }
         }
     }
 }
