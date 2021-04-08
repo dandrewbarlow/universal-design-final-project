@@ -7,6 +7,8 @@
 // Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 
+// CSS Reset
+
 // VARS/////////////////////////////////////////////////////////
 // Text
 $display-font: 'EB Garamond', serif;
@@ -35,7 +37,7 @@ header {
   text-align: center;
   font-family: $display-font;
   font-size: $display-font-size;
-  font-weight: bold;
+  font-weight: 800;
   color: $text-highlight;
 }
 
@@ -51,7 +53,7 @@ nav {
     li {
       list-style-type: none;
       button {
-        font-size: $copy-font-size;
+        font-size: 16pt;
         color: $link-color;
         background-color: $shadow;
         border: none;
@@ -69,21 +71,47 @@ nav {
 
 section {
   font-family: 'Barlow', sans-serif;
-  margin-left: 20%;
-  margin-right: 20%;
-  margin: 1em;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 1em;
+  // padding: 1em;
 
   h2 {
+    text-align: center;
     font-size: 25pt;
     font-weight: bolder;
-    margin-left: 25%;
+    // margin-left: 25%;
+  }
+  h3 {
+    font-size: 20pt;
+  }
+  h4 {
+    font-size: 18pt;
+  }
+
+  aside {
+    text-align: right;
+  }
+
+  img {
+    width: 100%;
+    margin: 1em;
   }
 
   p {
     font-size: 14pt;
+  }
+
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    text-align: center;
+    background-color: $shadow;
+    // padding: 1em;
+    // margin: 1em;
   }
 }
 
 // IMPORTS////////////////////////////////////////////////
 // Code for responsive style in seperate document
 @import 'responsive';
+@import 'reset';

@@ -12,7 +12,7 @@ import * as content from './content/content.jsx';
 function Header(){
     return (
       <header>
-        <h1>The Importance of Universal Design</h1>
+        <h1><em>The Importance of Universal Design</em></h1>
       </header>
 )}
 
