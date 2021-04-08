@@ -1,0 +1,81 @@
+// Andrew Barlow
+// Universal Design Spring 2021 Final
+
+// Main Style Sheet
+
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+// Text
+$display-font: 'EB Garamond', serif;
+$display-font-size: 20pt;
+$copy-font: 'Barlow', sans-serif;
+$copy-font-size: 14pt;
+
+// Colors
+$background-color: #3B69AD;
+$shadow: #0b3b83;
+$text-color: #F7FCE3;
+$text-highlight: #FA7461;
+$link-color: #4890FA;
+$link-shadow: 'black';
+
+
+body{
+  background-color: $background-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $text-color;
+}
+
+header {
+  text-align: center;
+  font-family: $display-font;
+  font-size: $display-font-size;
+  font-weight: bold;
+  color: $text-highlight;
+}
+
+nav {
+  ul {
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    li {
+      list-style-type: none;
+      button {
+        font-size: $copy-font-size;
+        color: $link-color;
+        background-color: $shadow;
+        border-radius: 10%;
+        border: none;
+        margin: 1em;
+        padding: 1em;
+        width: 10em;
+      }
+      a:visited {
+        color: $link-shadow;
+      }
+    }
+  }
+}
+
+section {
+  font-family: 'Barlow', sans-serif;
+
+  h2 {
+    font-size: 16pt;
+  }
+
+  p {
+    font-size: 14pt;
+  }
+  margin: 1em;
+}
+
+// Code for responsive style in seperate document
+@import 'responsive';

@@ -1,0 +1,18 @@
+// Andrew Barlow
+// Universal Design Spring 2021 Final
+
+// Mobile Style Rules
+
+$responsive-display-font-size: 16pt;
+$responsive-copy-font-size: 12pt;
+
+@media only screen and (max-width: 600px) {
+    header {
+        font-size: $responsive-display-font-size;
+    }
+    nav{
+        ul {
+            flex-direction: column;
+        }
+    }
+}
