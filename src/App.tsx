@@ -6,97 +6,73 @@
 // Imports
 import React from 'react';
 import './App.scss';
+import * as content from './content/content.jsx';
 
 // Header JSX
-class Header extends React.Component{
-  render(){
+function Header(){
     return (
       <header>
         <h1>The Importance of Universal Design</h1>
       </header>
-    )}
-}
+)}
 
-// Navigation Menu
-class Navbar extends React.Component{
-  renderLink(text:string) {
+class Content extends React.Component<{}, { content: string }> {
+  constructor(props:any){
+    super(props);
+    this.state = {
+      content: 'why',
+    }
+  }
+
+  renderLink(text:string, contentKey:string) {
     return (
-      <li><button>{text}</button></li>
+      <li><button onClick={() => this.setState({content:contentKey})}>{text}</button></li>
     )
   }
 
+  renderContent(key:string) {
+    switch (key) {
+      case 'why':
+        return (<content.Why />);
+
+      case 'tenets':
+        return (<content.Tenets />);
+    
+      case 'practices':
+        return (<content.Practices />);
+
+      default:
+        return (<content.Why />);
+    }
+  }
+
   render() {
     return (
+      <>
       <nav>
         <ul>
-          {this.renderLink('Why Universal Design?')}
-          {this.renderLink('Tenets')}
-          {this.renderLink('Practices')}
+          {this.renderLink('Why Universal Design?', 'why')}
+          {this.renderLink('Tenets', 'tenets')}
+          {this.renderLink('Practices', 'practices')}
         </ul>
       </nav>
-    );
-  }
-}
-
-class Content extends React.Component {
-  // constructor(props){
-  //   super(props);
-  //   this.state = {
-  //     content: 'why',
-  //   }
-  // }
-
-  handleClick() {
-    console.log('hi');
-  }
-
-  render() {
-    return (
-      <Navbar />
+      {this.renderContent(this.state.content)}
+      </>
     );
   }
 
 }
 
-// Content Section: Why Universal Design
-function Why() {
-  return(
-    <section id="why">
-      <h2>Why Universal Design?</h2>
-      <p>
-          Universal Design is a philosophy of design whose goals are to make something that works for the largest number of people. By incorporating inclusive design methods and implementing standards designed to help impaired users, a web designer can easily create accessible websites with only a few new tools.
-      </p>
-    </section>
 
-  )
-}
 
-// Content Section: Tenets of Universal Design
-function Tenets() {
-  return (
-    <section>
-      <h2>Tenets of Universal Design</h2>
-      <p></p>
-    </section>
-  )
-}
 
-// Content Section: Practices of Universal Design
-function Practices() {
-  return (
-    <section>
-      <h2>Practices of Universal Design</h2>
-      <p></p>
-    </section>
-  )
-}
+
 
 function App() {
   return (
     <>
       <Header />
-      <Navbar />
-      <Why />
+      <Content />
     </>
   );
 }
