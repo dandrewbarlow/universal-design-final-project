@@ -10,6 +10,10 @@ $responsive-copy-font-size: 12pt;
 @media only screen and (max-width: 600px) and (min-width: 400px) {
   header {
     font-size: $responsive-display-font-size;
+    color: $text-color;
+    h1 {
+      background-color: $background-color;
+    }
   }
 
   nav {
@@ -34,7 +38,11 @@ $responsive-copy-font-size: 12pt;
 // Additional one to keep the heading from clipping on ur flip phone
 @media only screen and (max-width: 400px) {
   header {
+    color: $text-color;
     font-size: 14pt;
+    h1 {
+      background-color: $background-color;
+    }
   }
   
   nav {

@@ -18,21 +18,22 @@ $background-color: #3b69ad;
 $shadow: #0b3b83;
 $text-color: #f7fce3;
 $text-highlight: #fa7461;
+$heading-color: #000000;
 $link-color: #4890fa;
-$link-shadow: "black";
+$link-shadow: #afccf7;
 
 // STYLE/////////////////////////////////////////////////////////
 ::selection {
-  color: "black";
-  background-color: $link-color;
+  color: black;
+  background-color: $text-highlight;
 }
 
 a {
-  color: $text-highlight;
+  color: #ffa200;
 }
 
 a:visited {
-  color: $link-shadow;
+  color: #d3dfff;
 }
 
 body {
@@ -51,13 +52,19 @@ header {
   font-family: $display-font;
   font-size: $display-font-size;
   font-weight: 800;
-  color: $text-highlight;
+  color: $heading-color;
+  h1 {
+    padding: 0.5em;
+    background-color: $text-color;
+  }
 }
 
 nav {
   width: 100%;
   ul {
     text-align: center;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-flow: row wrap;
     // flex-grow: 1;
@@ -70,7 +77,7 @@ nav {
 
       button {
         font-size: 16pt;
-        color: $link-color;
+        color: $text-color;
         background-color: $shadow;
         border: none;
         // padding: 2em;
@@ -84,6 +91,7 @@ nav {
       }
       button:hover {
         background-color: white;
+        color: $shadow;
       }
     }
   }
@@ -97,6 +105,10 @@ section {
   padding: 1em;
   line-height: 2em;
 
+  nav {
+    margin-left: 25%;
+    font-size: $copy-font-size;
+  }
 
   ul > li {
     // list-style: disc;
@@ -128,6 +140,7 @@ h2 {
   font-size: 25pt;
   font-weight: bolder;
   text-decoration: underline;
+  margin: 1em;
 }
 
 h3 {

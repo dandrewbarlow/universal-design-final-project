@@ -4,6 +4,7 @@
 // IMPORTS///////////////////////////////////////////////////////////////
 // A cute puppy
 import dog from "./img/cute-dog.jpg";
+
 // weird import; not neccessary for live site,
 // but tests fail without it. This is admittedly a stackoverflow pull
 import regeneratorRuntime from "regenerator-runtime";
@@ -50,18 +51,22 @@ export function Practices() {
     <section>
       <h2>Practices of Universal Design</h2>
 
-      <h3>Semantic HTML</h3>
+      <nav>
+        <ol>
+          <li><a href="#html5">HTML5</a></li>
+          <li><a href="#images">Images</a> </li>
+          <li><a href="#structure">Semantics and Structure</a></li>
+          <li></li>
+        </ol>
+      </nav>
+
+      <h3 id="html5">HTML5</h3>
 
       <p>
-        Some of the most important ways to make a website universal is also the
-        most straightforward. The HTML5 standard includes accessibility features
-        baked into the default. By following the rules of semantic web design, a
-        designer is already ahead of the curve. By properly tagging content,
-        accessibility tools like screenreaders can display content in a friendly
-        way to impaired users.
+        Some of the most important ways to make a website universal are also the most straightforward. The HTML5 standard includes accessibility features baked into the default. By following the rules of semantic web design, a designer is already ahead of the curve. By properly tagging content, accessibility tools like screenreaders can display content in a friendly way to impaired users.
       </p>
 
-      <h4>Images</h4>
+      <h3 id="images">Images</h3>
 
       <p>Here's an HTML tag for a simple image:</p>
 
@@ -94,16 +99,10 @@ export function Practices() {
         confusion.
       </p>
 
-      <h4>Semantics and Structure</h4>
+      <h3 id="structure">Semantics and Structure</h3>
 
       <p>
-        To go into more detail, a much more effective and user-friendly way to
-        pursue search engine optimization (S.E.O.) is through the smart use of
-        semantic web design. The web has changed a lot since the 90's and{" "}
-        <code>div</code>'s just don't fit the bill anymore. The HTML standards
-        have come up with descriptive tags that allow a designer to
-        heirarchichally structure their page in a way that makes sense to
-        designers and readers. For example:
+        To go into more detail, a much more effective and user-friendly way to pursue search engine optimization (S.E.O.) is through the smart use of semantic web design. The web has changed a lot since the 90's and{" "} <code>div</code>'s aren't a one-size fits all anymore. The HTML standards have come up with descriptive tags that allow a designer to heirarchichally structure their page in a way that makes sense to designers and readers. For example:
       </p>
 
       <ReactEmbedGist gist="dandrewbarlow/3567f60acdb3c069e0b0078dd0f2b872" />
