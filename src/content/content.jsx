@@ -2,7 +2,12 @@
 // Universal Design Spring 2021 Final
 
 // IMPORTS///////////////////////////////////////////////////////////////
+// A cute puppy
 import dog from "./img/cute-dog.jpg";
+// weird import; not neccessary for live site,
+// but tests fail without it. This is admittedly a stackoverflow pull
+import regeneratorRuntime from "regenerator-runtime";
+// Embedded github gists for the lazy web developer
 import ReactEmbedGist from "react-embed-gist";
 
 // WEBSITE CONTENT////////////////////////////////////////////////////////

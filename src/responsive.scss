@@ -7,7 +7,7 @@ $responsive-display-font-size: 16pt;
 $responsive-copy-font-size: 12pt;
 
 // MEDIA QUERY///////////////////////////////////////////////////////
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (min-width: 400px) {
   header {
     font-size: $responsive-display-font-size;
   }
@@ -28,5 +28,35 @@ $responsive-copy-font-size: 12pt;
         }
       }
     }
+  }
+}
+
+// Additional one to keep the heading from clipping on ur flip phone
+@media only screen and (max-width: 400px) {
+  header {
+    font-size: 14pt;
+  }
+  
+  nav {
+    ul {
+      flex-direction: column;
+
+      li {
+        margin: 0.333em;
+
+        button {
+          margin: 0;
+          padding: 1em;
+          height: 100%;
+          width: 75%;
+          border-radius: 1em;
+        }
+      }
+    }
+  }
+
+  h2, h3, h4 {
+    text-indent: 0;
+    font-size: 16pt;
   }
 }
