@@ -8,29 +8,25 @@ $responsive-copy-font-size: 12pt;
 
 // MEDIA QUERY///////////////////////////////////////////////////////
 @media only screen and (max-width: 600px) {
+  header {
+    font-size: $responsive-display-font-size;
+  }
 
-    header {
-        font-size: $responsive-display-font-size;
-    }
+  nav {
+    ul {
+      flex-direction: column;
 
-    nav{
+      li {
+        margin: 0.333em;
 
-        ul {
-
-            flex-direction: column;
-
-            li{
-
-                margin: .333em;
-
-                button {
-                    margin: 0;
-                    padding: 1em;
-                    height:100%;
-                    width: 75%;
-                    border-radius: 1em;
-                }
-            }
+        button {
+          margin: 0;
+          padding: 1em;
+          height: 100%;
+          width: 75%;
+          border-radius: 1em;
         }
+      }
     }
+  }
 }
