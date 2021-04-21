@@ -60,17 +60,7 @@ export default function Practices() {
         <img src="img/missing-dog.jpg" alt="A very cute puppy" />
 
         <p>
-            The <code>alt</code> tag's purpose is to provide a visual description of
-            an image for screen-readers to display to the visually impaired. As seen
-            here, it comes with the added benefit of preventing a missing image
-            source from becoming a page-breaking eyesore. The <code>alt</code> tag
-            is{" "}
-            <strong>
-            <em>not</em>
-            </strong>{" "}
-            for inserting keywords for attention from search engines. There are
-            better ways of doing so, and putting it inside image tags creates
-            confusion.
+            The <code>alt</code> tag's purpose is to provide a visual description of an image for screen-readers to display to the visually impaired. As seen here, it comes with the added benefit of preventing a missing image source from becoming a page-breaking eyesore. The <code>alt</code> tag is{" "} <strong> <em>not</em> </strong>{" "} for inserting keywords for attention from search engines. There are better ways of doing so, and putting it inside image tags creates confusion.
         </p>
 
         <h3 id="structure">Semantics and Structure</h3>
@@ -82,15 +72,14 @@ export default function Practices() {
         <ReactEmbedGist gist="dandrewbarlow/3567f60acdb3c069e0b0078dd0f2b872" />
 
         <p>
-            Here is an example of a simple HTML hierarchy that will work for
-            countless websites. Some of the important features include:
+            Here is an example of a simple HTML hierarchy that will work for countless websites. Some of the important features include:
         </p>
 
         <ul>
             <li>Language declaration [line 2] </li>
 
             <li>
-            Extensive use of the <code>meta</code> tag [lines 4-11]
+                Extensive use of the <code>meta</code> tag [lines 4-11]
             </li>
 
             <ul>
@@ -100,49 +89,34 @@ export default function Practices() {
             </li>
 
             <li>
-                This keeps the information visible to "web scrapers" that analyze
-                your content, removing the need to place keywords in odd places that
-                confuse people using assistive technology.
+                This keeps the information visible to "web scrapers" that analyze your content, removing the need to place keywords in odd places that confuse people using assistive technology.
             </li>
 
             <li>
-                This tag also is used to access the <code>viewport</code> property.
-                This tag is used to help a website look right, no matter what device
-                accesses it. There are many more things to do in this regard, but
-                this tag is the starting point.
+                This tag also is used to access the <code>viewport</code> property. This tag is used to help a website look right, no matter what device accesses it. There are many more things to do in this regard, but this tag is the starting point.
             </li>
             </ul>
 
             <li>
-            The actual HTML content is laid out simply and in a hierarchical
-            structure following the importance of the information.{" "}
+            The actual HTML content is laid out simply and in a hierarchical structure following the importance of the information.{" "}
             </li>
 
             <ul>
             <li>
-                This is what it means to say universal web design is simple. These
-                are considerations a web designer should already be considering when
-                making a page.
+                This is what it means to say universal web design is simple. These are considerations a web designer should already be considering when making a page.
             </li>
 
             <li>
-                Putting the content in these descriptive tabs allow smooth reading
-                and navigation for all users, not just the impaired.
+                Putting the content in these descriptive tabs allow smooth reading and navigation for all users, not just the impaired.
             </li>
 
             <li>
-                Avoid using <code>div</code>'s for anything but styling. They say
-                nothing about their content, so they should not be used for content.
+                Avoid using <code>div</code>'s for anything but styling. They say nothing about their content, so they should not be used for content.
             </li>
             </ul>
 
             <li>
-            Lastly I would like to guarantee that whatever you're doing, there's a
-            tag for that. I used a simple example, but{" "}
-            <a href="https://www.w3schools.com/TAGS/default.ASP">
-                the w3schools website has an excellent reference
-            </a>{" "}
-            to the multitude of available tags
+            Lastly I would like to guarantee that whatever you're doing, there's a tag for that. I used a simple example, but{" "} <a href="https://www.w3schools.com/TAGS/default.ASP"> the w3schools website has an excellent reference </a>{" "} to the multitude of available tags
             </li>
 
             <li></li>
