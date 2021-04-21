@@ -1,6 +1,13 @@
+// Andrew Barlow
+// index.tsx
+// strictly speaking an unnecessary extra abstraction layer inherited from create-react-app
+// not going to delete though, bc it works and so I'm not too concerned
+// Universal Design
+// 2021
+
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.scss";
+import "./scss/index.scss";
 import App from "./App";
 // import reportWebVitals from './reportWebVitals';
 

@@ -15,6 +15,31 @@ To start a development server run `yarn start`
 To build for a production environment, run `yarn build`
 
 ### Files
+```
+├── package.json
+├── public
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+├── README.md
+├── src
+│   ├── App.scss
+│   ├── App.test.tsx
+│   ├── App.tsx
+│   ├── content
+│   │   ├── content.jsx
+│   │   └── img
+│   │       └── cute-dog.jpg
+│   ├── index.scss
+│   ├── index.tsx
+│   ├── react-app-env.d.ts
+│   ├── reportWebVitals.ts
+│   ├── reset.scss
+│   ├── responsive.scss
+│   └── setupTests.ts
+├── tsconfig.json
+└── yarn.lock
+```
 
 * `build/` holds final compiled project. Not very human readable, but very efficient.
 * `public/` holds publicly served content. These are used for development server but minimized when built for production.
