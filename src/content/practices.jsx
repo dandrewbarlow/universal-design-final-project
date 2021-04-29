@@ -27,10 +27,9 @@ export default function Practices() {
 
         <nav>
             <ol>
-            <li><a href="#html5">HTML5</a></li>
-            <li><a href="#images">Images</a> </li>
-            <li><a href="#structure">Semantics and Structure</a></li>
-            <li></li>
+                <li><a href="#html5">HTML5</a></li>
+                <li><a href="#images">Images</a> </li>
+                <li><a href="#structure">Semantics and Structure</a></li>
             </ol>
         </nav>
 

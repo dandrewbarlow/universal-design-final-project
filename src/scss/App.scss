@@ -118,6 +118,20 @@ section {
 
   img {
     margin: 1em;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+  figure {
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    figcaption {
+      text-align: center;
+    }
   }
 
   p {

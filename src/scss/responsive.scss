@@ -18,10 +18,12 @@ $responsive-copy-font-size: 12pt;
 
   nav {
     ul {
-      flex-direction: column;
+      // flex-direction: column;
+      flex-flow: column nowrap;
 
       li {
         margin: 0.333em;
+        height: auto;
 
         button {
           margin: 0;
