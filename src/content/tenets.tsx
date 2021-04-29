@@ -43,6 +43,18 @@ export default function Tenets() {
                 <li>Size and space for approach and use</li>
             </ul>
 
+            <p>
+                By designing within these guidelines, you can create intuitive, beautiful, accessible websites.
+            </p>
+
+            <p>
+                And as a last resort, you can also use ARIA rules. Partially joking there, but ARIA stands for Accessible Rich Internet Application. It helps define interactive elements on websites for assistive technology. That said, it was designed in the internet's wild west period to make up for deficiencies in internet standards of the time. These days, however, much of the features ARIA offers have been integrated into updates to the file standards themselves. HTML5 itself brings a lot of these features, without needing to learn ARIA.
+            </p>
+
+            <p>
+                The general rule is only to use it when necessary. It can however be useful to hide elements that would only be distracting to a screen-reader.
+            </p>
+
         </section>
     );
 }
