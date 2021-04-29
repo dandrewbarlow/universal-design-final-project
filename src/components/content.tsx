@@ -11,6 +11,7 @@ import { Component } from 'react'
 import Why from "../content/why"
 import Tenets from "../content/tenets"
 import Practices from "../content/practices"
+import Auditing from "../content/auditing"
 
 
 // Content class with one state var to control which content is rendered
@@ -47,6 +48,9 @@ export default class Content extends Component<{}, { content: string }> {
       case "practices":
         return <Practices />;
 
+      case "auditing":
+        return <Auditing />;
+
       default:
         return <Why />;
     }
@@ -60,6 +64,7 @@ export default class Content extends Component<{}, { content: string }> {
             {this.renderLink("Why Universal Design?", "why")}
             {this.renderLink("Tenets", "tenets")}
             {this.renderLink("Practices", "practices")}
+            {this.renderLink("Auditing", "auditing")}
           </ul>
         </nav>
         {this.renderContent(this.state.content)}

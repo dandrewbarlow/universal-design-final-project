@@ -17,7 +17,7 @@ $copy-font-size: 14pt;
 $background-color: #3b69ad;
 $shadow: #0b3b83;
 $text-color: #f7fce3;
-$text-highlight: #fa7461;
+$text-highlight: #fdff8d;
 $heading-color: #000000;
 $link-color: #4890fa;
 $link-shadow: #afccf7;
@@ -29,11 +29,11 @@ $link-shadow: #afccf7;
 }
 
 a {
-  color: #ffa200;
+  color: $text-highlight;
 }
 
 a:visited {
-  color: #d3dfff;
+  color: #f58cff;
 }
 
 body {
@@ -55,7 +55,7 @@ header {
   color: $heading-color;
   h1 {
     padding: 0.5em;
-    background-color: $text-color;
+    background-color: #f7fce3;
   }
 }
 
@@ -105,6 +105,8 @@ section {
   padding: 1em;
   line-height: 2em;
 
+  // color: black;
+
   nav {
     margin-left: 25%;
     font-size: $copy-font-size;
@@ -141,6 +143,7 @@ section {
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
       monospace;
+    // color: white;
     text-align: center;
     background-color: $shadow;
     padding: 0.3em;

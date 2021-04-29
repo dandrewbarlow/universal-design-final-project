@@ -118,8 +118,9 @@ export default function Practices() {
             Lastly I would like to guarantee that whatever you're doing, there's a tag for that. I used a simple example, but{" "} <a href="https://www.w3schools.com/TAGS/default.ASP"> the w3schools website has an excellent reference </a>{" "} to the multitude of available tags
             </li>
 
-            <li></li>
         </ul>
+
+        
         </section>
     );
 }
