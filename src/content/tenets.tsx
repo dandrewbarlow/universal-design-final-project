@@ -33,7 +33,7 @@ export default function Tenets() {
  
             <p>Here are some of the principles that define universal design:</p>
 
-            <h3>Tenets</h3>
+            <h3>Principles</h3>
             <ul>
                 <li>Equitable use</li>
                 <li>Flexibility in use</li>
