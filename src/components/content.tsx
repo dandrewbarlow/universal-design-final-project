@@ -60,6 +60,7 @@ export default class Content extends Component<{}, { content: string }> {
     return (
       <>
         <nav>
+          <h2 className="sr-only">Main Navigation</h2>
           <ul>
             {this.renderLink("Why Universal Design?", "why")}
             {this.renderLink("Tenets", "tenets")}
